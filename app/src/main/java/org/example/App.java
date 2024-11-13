@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.concepts.basics.DataTypesExm;
+import org.example.concepts.basics.StringsExm;
+
 public class App {
 
     // MAIN METHOD
@@ -10,6 +13,11 @@ public class App {
         welcome("Programmer");
 
         System.out.println(getGreeting("Developer"));
+
+        System.out.println("==================================");
+
+        // TESTING PRACTICLES GO BELOW
+       StringsExm.stringsExMMethod();
 
     }
 
