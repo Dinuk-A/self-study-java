@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.concepts.basics.DataTypesExm;
+import org.example.concepts.basics.InnOutEx;
 import org.example.concepts.basics.StringsExm;
 
 public class App {
@@ -17,7 +18,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-       StringsExm.stringsExMMethod();
+       InnOutEx.inputsAddMethod();
 
     }
 
