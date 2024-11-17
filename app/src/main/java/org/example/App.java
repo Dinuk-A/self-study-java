@@ -3,6 +3,9 @@ package org.example;
 import org.example.concepts.basics.DataTypesExm;
 import org.example.concepts.basics.InnOutEx;
 import org.example.concepts.basics.StringsExm;
+import org.example.concepts.oop.classesobjects.ClzNObjsEx;
+import org.example.concepts.oop.inheritanceExamples.Animal;
+import org.example.concepts.oop.inheritanceExamples.Bird;
 
 public class App {
 
@@ -18,7 +21,11 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-       InnOutEx.inputsAddMethod();
+        Animal animalObj = new Animal();
+        animalObj.myself();
+
+        Bird tweety = new Bird("Tweety", true, 2, "Bird");
+        tweety.birdSing();
 
     }
 
