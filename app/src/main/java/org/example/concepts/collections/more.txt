@@ -1,0 +1,5 @@
+Arrays.equals()
+Multi-Dimensional Arrays 
+Arrays.deepToString()
+Arrays.stream()
+Arrays.sort(nums, 1, 3)

@@ -26,7 +26,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-        NormalArrayEx.moreSortings();
+        NormalArrayEx.usingSystemArrayCopy();
 
         System.out.println("==================================");
 
