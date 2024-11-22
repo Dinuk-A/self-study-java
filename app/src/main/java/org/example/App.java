@@ -3,6 +3,7 @@ package org.example;
 import org.example.concepts.basics.DataTypesExm;
 import org.example.concepts.basics.InnOutEx;
 import org.example.concepts.basics.StringsExm;
+import org.example.concepts.collections.ArrayListsEx;
 import org.example.concepts.collections.MultiDimArrays;
 import org.example.concepts.collections.NormalArrayEx;
 import org.example.concepts.oop.abstractionandmore.AbsChild;
@@ -28,8 +29,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-        EnumsEx myVar = EnumsEx.FRIDAY;
-        System.out.println(myVar);     
+       ArrayListsEx.demonstrateArrayListFunctions();  
 
 
         
