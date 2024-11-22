@@ -1,4 +1,4 @@
-package org.example.concepts.oop.abstraction;
+package org.example.concepts.oop.abstractionandmore;
 
 // a class can only inherit from one superclass
 public class AbsChild extends AbsClz {

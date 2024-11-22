@@ -1,7 +1,67 @@
-Multi-Dimensional Arrays 
-Arrays.deepToString()
+
 
 ttriangle sjapes wirh stars
+
+complex enums(in abstraction) 
+enum Season {
+    WINTER("Cold season"),
+    SPRING("Pleasant season"),
+    SUMMER("Hot season"),
+    FALL("Cool season");
+
+    private final String description;
+
+    // Constructor
+    Season(String description) {
+        this.description = description;
+    }
+
+    // Method
+    public String getDescription() {
+        return description;
+    }
+}
+
+public class EnumWithFields {
+    public static void main(String[] args) {
+        for (Season season : Season.values()) {
+            System.out.println(season + ": " + season.getDescription());
+        }
+    }
+}
+
+ordinal()
+
+fields in classes, objects
+enum Constants {
+    PI(3.142f),
+    E(2.718f),
+    GOLDEN_RATIO(1.618f);
+
+    private final float value; // Attribute to store the constant value
+
+    // Constructor
+    Constants(float value) {
+        this.value = value;
+    }
+
+    // Getter
+    public float getValue() {
+        return value;
+    }
+}
+
+public class EnumExample {
+    public static void main(String[] args) {
+        for (Constants constant : Constants.values()) {
+            System.out.println(constant + ": " + constant.getValue());
+        }
+    }
+}
+
+scabber 
+date
+
 
 Lists and ArrayLists
 Sets

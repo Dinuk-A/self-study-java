@@ -5,7 +5,8 @@ import org.example.concepts.basics.InnOutEx;
 import org.example.concepts.basics.StringsExm;
 import org.example.concepts.collections.MultiDimArrays;
 import org.example.concepts.collections.NormalArrayEx;
-import org.example.concepts.oop.abstraction.AbsChild;
+import org.example.concepts.oop.abstractionandmore.AbsChild;
+import org.example.concepts.oop.abstractionandmore.EnumsEx;
 import org.example.concepts.oop.classesobjects.ClzNObjsEx;
 import org.example.concepts.oop.classesobjects.InnerClzExm;
 import org.example.concepts.oop.inheritanceExamples.Animal;
@@ -27,7 +28,11 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-        MultiDimArrays.createArrays();       
+        EnumsEx myVar = EnumsEx.FRIDAY;
+        System.out.println(myVar);     
+
+
+        
 
         System.out.println("==================================");
 

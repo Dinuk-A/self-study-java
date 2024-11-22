@@ -1,4 +1,4 @@
-package org.example.concepts.oop.abstraction;
+package org.example.concepts.oop.abstractionandmore;
 
 // class can implement multiple interfaces (separate with comma)
 public class IntfcChild implements InterfaceExm {
