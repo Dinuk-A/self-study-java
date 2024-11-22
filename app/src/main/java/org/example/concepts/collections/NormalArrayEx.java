@@ -27,8 +27,16 @@ public class NormalArrayEx {
         // System.out.println(newNums); this wont print the array, only the memory
         // reference
 
+        //create array using for loops
+        int[] newNEwNums =new int[5];
+        for(int i = 0; i<newNEwNums.length; i++){
+            newNEwNums[i] = 2*i;
+        }
+
         // to print an array as itself >>
         System.out.println(Arrays.toString(newNums));
+        System.out.println();
+        System.out.println(Arrays.toString(newNEwNums));
 
         // to loop through array and get values outside
         // 1
@@ -191,11 +199,11 @@ public class NormalArrayEx {
         String[] copy = Arrays.copyOf(originalString, originalString.length);
     }
 
+    //7
     // Copies a specific range of elements from one array to another existing array.
 
     // The destination array must already exist with enough space to accommodate the
     // copied elements.
-
     public static void usingSystemArrayCopy() {
 
         // System.arraycopy(Object src, int srcPos, Object dest, int destPos, int
@@ -217,6 +225,20 @@ public class NormalArrayEx {
 
     }
 
-    // multi dimensional arrays
+    //8
+    //Arrays are considered equal only if elements are in the same order
+    public static void arrEqualCheck(){
+
+        int[] arrr1  = {1,2,3,4};
+        int[] arr2 = {1,2,3,4};
+
+        //this will output true or false
+        //same for strings, chars, bools, ...etc
+        System.out.println(Arrays.equals(arrr1, arr2));
+
+        //complex logic for Object compariosn...not demonstrated here
+    }
+    
+    
 
 }
