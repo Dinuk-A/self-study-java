@@ -63,8 +63,22 @@ scabber
 date
 
 
-Lists and ArrayLists
-Sets
+
+
+Vector
+Stacks and Queues
+HashSet and TreeSet
 Maps
+PriorityQueue
+Trees (Binary Trees, Binary Search Trees, AVL Trees, etc.)
+Heaps (Min-Heap, Max-Heap)
+Graphs
+Trie (Prefix Tree)
+Deque (Double-Ended Queue)
+sorting algorithms (like QuickSort, MergeSort, BubbleSort)
+searching algorithms (like Binary Search)
+
 
 Arrays.stream() //after above collections
+
+Iterator

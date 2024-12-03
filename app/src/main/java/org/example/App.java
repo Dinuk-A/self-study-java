@@ -4,6 +4,7 @@ import org.example.concepts.basics.DataTypesExm;
 import org.example.concepts.basics.InnOutEx;
 import org.example.concepts.basics.StringsExm;
 import org.example.concepts.collections.ArrayListsEx;
+import org.example.concepts.collections.LinkedListEx;
 import org.example.concepts.collections.MultiDimArrays;
 import org.example.concepts.collections.NormalArrayEx;
 import org.example.concepts.oop.abstractionandmore.AbsChild;
@@ -29,10 +30,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-       ArrayListsEx.demonstrateArrayListFunctions();  
-
-
-        
+        LinkedListEx.moreManipsAndRemovings();
 
         System.out.println("==================================");
 

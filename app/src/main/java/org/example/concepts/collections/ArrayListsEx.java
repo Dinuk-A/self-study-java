@@ -24,7 +24,7 @@ public class ArrayListsEx {
         // using List.Of (cant modify elements later)
         ArrayList<String> cities = new ArrayList<String>(List.of("Gampaha", "colombo"));
 
-        //clone
+        // clone
         ArrayList<String> clonedList = new ArrayList<>(cars);
         System.out.println(clonedList);
     }
@@ -56,7 +56,7 @@ public class ArrayListsEx {
         }
         System.out.println("******************");
 
-        // using enhance for loop(for each)
+        // using 'enhance for loop' (for each)
         for (String town : towns) {
             System.out.println(town);
         }
@@ -68,6 +68,7 @@ public class ArrayListsEx {
 
     // 3
     public static void demonstrateArrayListFunctions() {
+
         // Create an ArrayList with initial values
         ArrayList<String> fruits = new ArrayList<>(Arrays.asList("Apple", "Banana", "Orange", "Grapes"));
         System.out.println("Original List: " + fruits);
@@ -118,6 +119,7 @@ public class ArrayListsEx {
         System.out.println();
 
         // trimToSize: Trim the capacity of the ArrayList to the current size
+        // no visible effect, good for reduce memory
         fruits.trimToSize();
         System.out.println("After trimToSize: " + fruits);
     }
