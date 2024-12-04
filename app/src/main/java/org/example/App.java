@@ -7,6 +7,7 @@ import org.example.concepts.collections.ArrayListsEx;
 import org.example.concepts.collections.LinkedListEx;
 import org.example.concepts.collections.MultiDimArrays;
 import org.example.concepts.collections.NormalArrayEx;
+import org.example.concepts.collections.StacksEx;
 import org.example.concepts.oop.abstractionandmore.AbsChild;
 import org.example.concepts.oop.abstractionandmore.EnumsEx;
 import org.example.concepts.oop.classesobjects.ClzNObjsEx;
@@ -30,7 +31,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-        LinkedListEx.moreManipsAndRemovings();
+        StacksEx.more();
 
         System.out.println("==================================");
 
