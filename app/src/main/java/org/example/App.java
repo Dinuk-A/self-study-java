@@ -16,6 +16,7 @@ import org.example.concepts.oop.inheritanceExamples.Animal;
 import org.example.concepts.oop.inheritanceExamples.Bird;
 import org.example.concepts.oop.polyEx.Employee;
 import org.example.concepts.oop.polyEx.Human;
+import org.example.concepts.others.FileHandle;
 
 public class App {
 
@@ -31,7 +32,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-        StacksEx.more();
+        FileHandle.customFileCreation();
 
         System.out.println("==================================");
 

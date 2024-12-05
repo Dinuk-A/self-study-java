@@ -76,10 +76,39 @@ public class StacksEx {
 
         textEditor.clear();
 
-
-
     }
 
+    //3
+    public static void reverseOrder(){
 
+        Stack<Integer> nums = new Stack<>();
+
+        for(int i = 0; i<10;i++){
+            nums.push(i);
+        }
+
+        System.out.println("Original : "+ nums);
+        System.out.println("top : " + nums.peek());
+
+        Stack<Integer> reversedNums = new Stack<>();
+
+        //traditional for loops iterate bottom to top, so we cant use them
+
+        //lets use a while
+        while (!nums.isEmpty()) {
+            int poppedValue = nums.pop();
+            reversedNums.push(poppedValue);
+        }
+
+        System.out.println("Reversed : "+ reversedNums);
+
+        //2
+        /*
+         * convert into a list
+         * then use Collection.reverse(name of list) 
+         *  then .addAll to new Stack
+         */
+
+    }
 
 }
