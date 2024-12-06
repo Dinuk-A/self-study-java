@@ -8,6 +8,9 @@ import org.example.concepts.collections.LinkedListEx;
 import org.example.concepts.collections.MultiDimArrays;
 import org.example.concepts.collections.NormalArrayEx;
 import org.example.concepts.collections.StacksEx;
+import org.example.concepts.files.FileHandle;
+import org.example.concepts.files.FileMethodsGPT;
+import org.example.concepts.files.ReadFiles;
 import org.example.concepts.oop.abstractionandmore.AbsChild;
 import org.example.concepts.oop.abstractionandmore.EnumsEx;
 import org.example.concepts.oop.classesobjects.ClzNObjsEx;
@@ -16,8 +19,6 @@ import org.example.concepts.oop.inheritanceExamples.Animal;
 import org.example.concepts.oop.inheritanceExamples.Bird;
 import org.example.concepts.oop.polyEx.Employee;
 import org.example.concepts.oop.polyEx.Human;
-import org.example.concepts.others.FileHandle;
-import org.example.concepts.others.FileMethodsGPT;
 
 public class App {
 
@@ -33,7 +34,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-        FileMethodsGPT.searchFolderByName("MyFolder");
+        ReadFiles.readGivenFile("MyFolder\\file_4.txt");
 
         System.out.println("==================================");
 

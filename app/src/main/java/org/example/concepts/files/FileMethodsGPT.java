@@ -1,4 +1,4 @@
-package org.example.concepts.others;
+package org.example.concepts.files;
 
 import java.io.File;
 import java.io.IOException;

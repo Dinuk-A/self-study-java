@@ -1,4 +1,4 @@
-package org.example.concepts.others;
+package org.example.concepts.files;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -52,8 +52,7 @@ public class FileHandle {
 
         try {
 
-            // in here we can pass an already exist file name or no exist file name. if non
-            // exist it creates too and then writes
+            // in here we can pass an already exist file name or no exist file name. if non-exist, it creates too and then writes
 
             FileWriter myWriter = new FileWriter("abcc.txt");
             myWriter.write("catttttttttttts");
