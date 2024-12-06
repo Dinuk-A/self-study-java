@@ -17,6 +17,7 @@ import org.example.concepts.oop.inheritanceExamples.Bird;
 import org.example.concepts.oop.polyEx.Employee;
 import org.example.concepts.oop.polyEx.Human;
 import org.example.concepts.others.FileHandle;
+import org.example.concepts.others.FileMethodsGPT;
 
 public class App {
 
@@ -32,7 +33,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-        FileHandle.customFileCreation();
+        FileMethodsGPT.searchFolderByName("MyFolder");
 
         System.out.println("==================================");
 
