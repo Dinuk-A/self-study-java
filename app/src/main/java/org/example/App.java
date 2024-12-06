@@ -8,6 +8,7 @@ import org.example.concepts.collections.LinkedListEx;
 import org.example.concepts.collections.MultiDimArrays;
 import org.example.concepts.collections.NormalArrayEx;
 import org.example.concepts.collections.StacksEx;
+import org.example.concepts.files.DeleteFiles;
 import org.example.concepts.files.FileHandle;
 import org.example.concepts.files.FileMethodsGPT;
 import org.example.concepts.files.ReadFiles;
@@ -34,7 +35,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-        ReadFiles.readGivenFile("MyFolder\\file_4.txt");
+        DeleteFiles.DeleteFs();
 
         System.out.println("==================================");
 
