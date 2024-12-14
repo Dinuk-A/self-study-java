@@ -52,7 +52,8 @@ public class FileHandle {
 
         try {
 
-            // in here we can pass an already exist file name or no exist file name. if non-exist, it creates too and then writes
+            // in here we can pass an already exist file name or no exist file name. if
+            // non-exist, it creates too and then writes
 
             FileWriter myWriter = new FileWriter("abcc.txt");
             myWriter.write("catttttttttttts");
@@ -92,10 +93,31 @@ public class FileHandle {
         } finally {
             scanner.close();
         }
-       
 
+    }
 
+    //to write w/o overwriting , use append mode == pass true as 2nd arg in
+    public static void appendFile() {
+        File alreadyExistingFile = new File("MyFolder/file_6.txt");
 
-       
+        if (!alreadyExistingFile.exists()) {
+            System.out.println("file not found");
+
+        } else {
+
+            try {
+
+                // second parameter true for not override
+                FileWriter writer = new FileWriter(alreadyExistingFile, true);
+                writer.write("\n new text");
+                writer.close();
+
+            } catch (IOException e) {
+                System.out.println("An error occurred.");
+                e.printStackTrace();
+            }
+
+        }
+
     }
 }

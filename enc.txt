@@ -1,0 +1,52 @@
+Solution to Your Concern:
+
+When a user creates a new record, the record is encrypted with the AES key derived from their master password at that point in time.
+The encryption key doesn't need to be stored because the only thing that matters for future access is the encrypted data.
+The next time the user logs in, they will provide their master password again, which will allow the application to derive the same AES key (because PBKDF2 is a deterministic function — it will always generate the same key for the same input).
+Once the key is derived, the user can decrypt the records (which were encrypted during the previous session) because they now have the same AES key that was used originally.
+
+How This Works in Practice:
+User Logs In:
+User enters the master password.
+The system derives an AES key from this password using a key derivation function (PBKDF2).
+
+Encrypting Data:
+When the user creates a new record, the system encrypts the password and hint using the derived AES key.
+The encrypted data (the password and hint) is saved (to a file, database, etc.).
+
+Logging Out / Closing App:
+When the user logs out or closes the app, the AES key is discarded. The key is never stored persistently, only in memory during the session.
+
+User Logs In Again:
+The user enters their master password again.
+The system derives the same AES key (since the password hasn't changed).
+The user can now decrypt the data that was encrypted earlier because the same AES key is used.
+
+Key Derivation is Deterministic
+PBKDF2 (or any other key derivation function) is deterministic, meaning the same input (master password) will always produce the same output (AES key). So, when the user logs in again, the system will derive the same AES key that was used previously to encrypt the data. This ensures that encrypted records can be decrypted successfully, even after a new login session.
+
+
+Example Walkthrough:
+User Logs In:
+
+User enters their master password: "secret123".
+PBKDF2 derives an AES key from "secret123".
+This key is used to encrypt and decrypt records for the session.
+User Creates a New Record:
+
+User adds a record (e.g., password: "passwordXYZ", hint: "my password").
+The system encrypts the record with the derived AES key and saves it to a file.
+User Logs Out / Closes App:
+
+The AES key is discarded. The encrypted data (record) is saved.
+User Logs In Again:
+
+User enters the same master password: "secret123".
+The system derives the same AES key.
+The user can now decrypt the record because the AES key is the same as the one used for encryption.
+Key Points:
+Key is derived from the master password each time the user logs in.
+Encrypted data is independent of the key — it's only the data that changes, not the key.
+The user doesn’t need to re-enter the master password after logging in for encryption/decryption within the session.
+When the user logs in later, the derived key will be the same, so they can decrypt previously encrypted records.
+This way, the user only has to enter the master password once, and they can access all their encrypted records (even after a restart of the application).

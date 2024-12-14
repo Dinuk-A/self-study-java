@@ -46,8 +46,7 @@ public class ReadFiles {
 
     }
 
-    // 2 to write w/o overwriting , use append mode == pass true as 2nd arg in
-    // FileWriter()
+   
 
     // 3 read a given file
     public static void readGivenFile(String fileName) {
@@ -73,7 +72,7 @@ public class ReadFiles {
 
     }
 
-    // additional  (same as above) 
+    // additional (same as above)
     // with early returns
     public static void earlyReturn(String fileName) {
 

@@ -35,7 +35,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-        DeleteFiles.DeleteFs();
+       
 
         System.out.println("==================================");
 
