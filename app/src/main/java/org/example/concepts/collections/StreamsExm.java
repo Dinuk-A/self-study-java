@@ -122,4 +122,37 @@ public class StreamsExm {
         System.out.println(count);
 
     }
+
 }
+/*
+ * Intermediate Stream Operations:
+ * - distinct() // Removes duplicates
+ * - peek() // Performs a side-effect for each element (e.g., for debugging)
+ * - sorted() // Sorts elements in natural or custom order
+ * - limit() // Limits the number of elements
+ * - skip() // Skips a specified number of elements
+ * - flatMap() // Flattens nested collections/streams into a single stream
+ * - mapToInt() // Converts the stream to an IntStream (from Object to int)
+ * - mapToDouble() // Converts the stream to a DoubleStream (from Object to
+ * double)
+ * - mapToLong() // Converts the stream to a LongStream (from Object to long)
+ * - mapToObj() // Converts primitive streams back to Object streams
+ * - anyMatch() // Checks if any element matches a given condition
+ * - allMatch() // Checks if all elements match a given condition
+ * - noneMatch() // Checks if no elements match a given condition
+ * - reduce() // Performs a reduction (combines elements into a single result)
+ * 
+ * Terminal Stream Operations:
+ * - forEach() // Performs an action for each element
+ * - collect() // Collects the stream elements into a collection
+ * - count() // Returns the number of elements in the stream
+ * - findFirst() // Returns the first element from the stream
+ * - findAny() // Returns any element from the stream
+ * - min() // Returns the minimum element based on a comparator
+ * - max() // Returns the maximum element based on a comparator
+ * - toArray() // Collects the elements into an array
+ * - anyMatch() // Checks if any element matches a given condition
+ * - allMatch() // Checks if all elements match a given condition
+ * - noneMatch() // Checks if no elements match a given condition
+ * - reduce() // Reduces the stream to a single result (e.g., sum, product)
+ */
