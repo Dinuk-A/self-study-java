@@ -8,6 +8,7 @@ import org.example.concepts.collections.LinkedListEx;
 import org.example.concepts.collections.MultiDimArrays;
 import org.example.concepts.collections.NormalArrayEx;
 import org.example.concepts.collections.StacksEx;
+import org.example.concepts.collections.StreamsExm;
 import org.example.concepts.files.DeleteFiles;
 import org.example.concepts.files.FileHandle;
 import org.example.concepts.files.FileMethodsGPT;
@@ -21,6 +22,7 @@ import org.example.concepts.oop.inheritanceExamples.Bird;
 import org.example.concepts.oop.polyEx.Employee;
 import org.example.concepts.oop.polyEx.Human;
 import org.example.utils.jsonFilesHndl.JsonExmWithClass;
+import org.example.utils.mapss.HashMapsEx;
 
 public class App {
 
@@ -36,7 +38,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-       JsonExmWithClass.jsonToMultipleJavaObjs();
+       StreamsExm.filtersWithStream();
 
         System.out.println("==================================");
 
