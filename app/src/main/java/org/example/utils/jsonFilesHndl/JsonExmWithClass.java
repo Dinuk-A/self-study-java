@@ -1,13 +1,12 @@
 package org.example.utils.jsonFilesHndl;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import java.io.File;
-import java.io.IOException;
 
-import java.util.List;
+
 import java.util.ArrayList;
 
-public class JsonExm {
+public class JsonExmWithClass {
 
     // serialization === convert a single java object into json string
     public static void createJsonObj() {
@@ -71,7 +70,7 @@ public class JsonExm {
 
     }
 
-    // eserialization === convert json to java
+    // deserialization === convert json to java
     public static void jsonToJavaSingleObj() {
 
         // sample json string
@@ -88,6 +87,23 @@ public class JsonExm {
 
         } catch (Exception e) {
             e.printStackTrace();
+        }
+
+    }
+
+    //deserialization === json array to java multiple objs
+    public static void jsonToMultipleJavaObjs() {
+        
+        String jsonArrString ="[{\"name\":\"John Doe\",\"age\":30},{\"name\":\"Dinuka\",\"age\":27}]";
+
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            ArrayList<Person> ppls = mapper.readValue(jsonArrString, new TypeReference<ArrayList<Person>>(){});
+            System.out.println(ppls);
+
+        } catch (Exception e) {
+           System.out.println("errorrrrrrrrrr");
+           e.printStackTrace();
         }
 
     }

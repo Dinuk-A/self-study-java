@@ -20,7 +20,7 @@ import org.example.concepts.oop.inheritanceExamples.Animal;
 import org.example.concepts.oop.inheritanceExamples.Bird;
 import org.example.concepts.oop.polyEx.Employee;
 import org.example.concepts.oop.polyEx.Human;
-import org.example.utils.jsonFilesHndl.JsonExm;
+import org.example.utils.jsonFilesHndl.JsonExmWithClass;
 
 public class App {
 
@@ -36,7 +36,7 @@ public class App {
         System.out.println("==================================");
 
         // TESTING PRACTICLES GO BELOW
-       JsonExm.jsonToJavaSingleObj();
+       JsonExmWithClass.jsonToMultipleJavaObjs();
 
         System.out.println("==================================");
 
