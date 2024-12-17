@@ -1,4 +1,4 @@
-package org.example.utils.jsonFilesHndl;
+package org.example.utils.jsonnnn;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

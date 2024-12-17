@@ -1,4 +1,4 @@
-package org.example.utils.jsonFilesHndl;
+package org.example.utils.jsonnnn;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;

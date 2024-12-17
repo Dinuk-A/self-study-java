@@ -1,4 +1,4 @@
-package org.example.utils.jsonFilesHndl;
+package org.example.utils.jsonnnn;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -14,19 +14,20 @@ import java.util.LinkedHashMap;
 //bcz json doesnt know what are keys and what are values
 public class JsonWHashMap {
 
-    //01
+    // 01
     public static void convertTohMap() {
-        
+
         String jsonArray = "[{\"name\":\"John Doe\",\"age\":30}, {\"name\":\"Jane Doe\",\"age\":50}]";
 
-
         try {
-            
+
             ObjectMapper mapper = new ObjectMapper();
 
-             // Step 1: Deserialize JSON Array into List of Maps
-             List<Map<String, Object>> list = mapper.readValue(jsonArray, new TypeReference<List<Map<String, Object>>>() {});
-            
+            // Step 1: Deserialize JSON Array into List of Maps
+            List<Map<String, Object>> list = mapper.readValue(jsonArray,
+                    new TypeReference<List<Map<String, Object>>>() {
+                    });
+
             // Step 2: Convert List of Maps into a single Map
             Map<String, Object> resultMap = new LinkedHashMap<>();
 
@@ -37,17 +38,20 @@ public class JsonWHashMap {
             // Print the final map
             System.out.println(resultMap);
 
-            
             // System.out.println(pplMap);
 
         } catch (Exception e) {
-           e.printStackTrace();
+            e.printStackTrace();
         }
 
     }
 
-    
+    // why linkedhmap?
 
-    
-    
+    /*
+     * Maintains the insertion order of keys.
+     * If the order of JSON objects matters (e.g., John Doe appears before Jane
+     * Doe), LinkedHashMap ensures the order is preserved.
+     */
+
 }
