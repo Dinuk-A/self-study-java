@@ -2,8 +2,6 @@ package org.example.utils.jsonFilesHndl;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-
 import java.util.ArrayList;
 
 public class JsonExmWithClass {

@@ -21,7 +21,9 @@ import org.example.concepts.oop.inheritanceExamples.Animal;
 import org.example.concepts.oop.inheritanceExamples.Bird;
 import org.example.concepts.oop.polyEx.Employee;
 import org.example.concepts.oop.polyEx.Human;
+import org.example.utils.jsonFilesHndl.JsonExmWClzsTwo;
 import org.example.utils.jsonFilesHndl.JsonExmWithClass;
+import org.example.utils.jsonFilesHndl.JsonWHashMap;
 import org.example.utils.mapss.HashMapsEx;
 
 public class App {
@@ -37,8 +39,8 @@ public class App {
 
         System.out.println("==================================");
 
-        // TESTING PRACTICLES GO BELOW
-       StreamsExm.filtersWithStream();
+        // ############### TESTING PRACTICLES GO BELOW  ###############
+       JsonWHashMap.convertTohMap();
 
         System.out.println("==================================");
 
