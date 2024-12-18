@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class JsonExmWithClass {
 
-    // serialization === convert a single java object into json string
+    //01 serialization === convert a single java object into json string
     public static void createJsonObj() {
 
         // create a instance of a ObjectMapper
@@ -27,7 +27,7 @@ public class JsonExmWithClass {
 
     }
 
-    // convert multiple java objects (collection)
+    //02 convert multiple java objects (collection)
     public static void createJsonArray() {
 
         // create a instance of a ObjectMapper
@@ -36,7 +36,7 @@ public class JsonExmWithClass {
         // create an empty array
         ArrayList<Person> ppl = new ArrayList<>();
 
-        // create multiple Person Objs at once
+        // create multiple Person Objs at once + add them to empty array
         for (int i = 0; i < 5; i++) {
 
             String name = "abc_" + i;

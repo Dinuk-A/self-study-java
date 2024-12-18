@@ -25,6 +25,8 @@ import org.example.utils.jsonnnn.JSONObjectExm;
 import org.example.utils.jsonnnn.JsonExmWClzsTwo;
 import org.example.utils.jsonnnn.JsonExmWithClass;
 import org.example.utils.jsonnnn.JsonWHashMap;
+import org.example.utils.jsonnnn.JsonWriteInFiles;
+import org.example.utils.jsonnnn.ReadJsonFile;
 import org.example.utils.mapss.HashMapsEx;
 
 public class App {
@@ -41,7 +43,7 @@ public class App {
         System.out.println("==================================");
 
         // ############### TESTING PRACTICLES GO BELOW  ###############
-       JSONObjectExm.createJsonArray();
+        JsonWriteInFiles.appendToExsFile();
 
         System.out.println("==================================");
 
