@@ -1,0 +1,56 @@
+{
+    "metadata": {
+        "lastUpdated": "2024-12-18T12:27:42.233755800Z",
+        "type": "people"
+    },
+    "people": [
+        {
+            "address": {
+                "code": 1,
+                "city": "col"
+            },
+            "name": "dinuka",
+            "age": 27
+        },
+        {
+            "address": {
+                "code": 2,
+                "city": "col"
+            },
+            "name": "prampd",
+            "age": 25
+        },
+        {
+            "address": {
+                "code": 1,
+                "city": "col"
+            },
+            "name": "dinuka",
+            "age": 27
+        },
+        {
+            "address": {
+                "code": 2,
+                "city": "col"
+            },
+            "name": "prampd",
+            "age": 25
+        },
+        {
+            "address": {
+                "code": 1,
+                "city": "col"
+            },
+            "name": "dinuka",
+            "age": 27
+        },
+        {
+            "address": {
+                "code": 2,
+                "city": "col"
+            },
+            "name": "prampd",
+            "age": 25
+        }
+    ]
+}

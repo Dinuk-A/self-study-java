@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "type" : "vehicle",
-    "lastUpdated" : "2024-12-18T11:24:10.756509800Z"
+    "lastUpdated" : "2024-12-18T11:31:12.372209400Z"
   },
   "vehicles" : [ {
     "brand" : "brand_0",
@@ -15,6 +15,18 @@
     "brand" : "brand_2",
     "model" : "model_2",
     "wheels" : 8
+  }, {
+    "brand" : "brand_3",
+    "model" : "model_3",
+    "wheels" : 12
+  }, {
+    "brand" : "brand_4",
+    "model" : "model_4",
+    "wheels" : 16
+  }, {
+    "brand" : "brand_5",
+    "model" : "model_5",
+    "wheels" : 20
   }, {
     "brand" : "brand_3",
     "model" : "model_3",
