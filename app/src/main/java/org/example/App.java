@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.utils.encrp.EncrWithSecretKeysExm;
 import org.example.utils.jsonnnn.JsonWriteInFiles;
 
 public class App {
@@ -16,7 +17,7 @@ public class App {
         System.out.println("==================================");
 
         // ############### TESTING PRACTICLES GO BELOW  ###############
-        JsonWriteInFiles.appendFromJobjAndJArrWithMetadata();
+        EncrWithSecretKeysExm.genKeyWithRawData();
 
         System.out.println("==================================");
 
