@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.utils.DateEx;
 import org.example.utils.encrp.EncrWithSecretKeysExm;
 import org.example.utils.jsonnnn.JsonWriteInFiles;
 
@@ -16,8 +17,8 @@ public class App {
 
         System.out.println("==================================");
 
-        // ############### TESTING PRACTICLES GO BELOW  ###############
-        EncrWithSecretKeysExm.genKeyWithRawData();
+        // ############### TESTING PRACTICLES GO BELOW ###############
+        DateEx.formatVals();
 
         System.out.println("==================================");
 

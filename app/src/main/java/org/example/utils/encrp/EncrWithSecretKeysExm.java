@@ -4,6 +4,7 @@ import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 
 public class EncrWithSecretKeysExm {
@@ -51,18 +52,18 @@ public class EncrWithSecretKeysExm {
 
     }
 
-    //directly create a secret key by providing raw bytes
+    // directly create a secret key by providing raw bytes
     public static void genKeyWithRawData() {
-        byte[] keyBytes = "123456789".getBytes();
+        byte[] keyBytes = "123456789".getBytes(StandardCharsets.US_ASCII);
 
         System.out.println(Arrays.toString(keyBytes));
         SecretKey sk = new SecretKeySpec(keyBytes, "AES");
 
         System.out.println("key " + sk);
-        
-        System.out.println("algo used "+ sk.getAlgorithm());
-        System.out.println("format "+ sk.getFormat());
-        System.out.println("key in primary format "+ sk.getEncoded());
+
+        System.out.println("algo used " + sk.getAlgorithm());
+        System.out.println("format " + sk.getFormat());
+        System.out.println("key in primary format " + sk.getEncoded());
     }
 
 }
